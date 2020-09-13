@@ -15,29 +15,30 @@ class ListQuizzes(APIView):
         print(jsonRequest['link'])
 
         return Response({'Link': jsonRequest['link'], 'Quiz': 'Dummy Data'})
-f="video_transcript_1.txt"
-f=open(f, 'r')
 
-#f="california is a city. india is a country. i love apples. the sun is big."
+# f="video_transcript_1.txt"
+# f=open(f, 'r')
 
-list= [] #word list
+# #f="california is a city. india is a country. i love apples. the sun is big."
 
-l=f.split()
-for w in l:
-      list.append(w)
+# list= [] #word list
 
-list.sort()
+# l=f.split()
+# for w in l:
+#       list.append(w)
 
-dict= {}
+# list.sort()
 
-for w in list:
-    dict[w]=list.count(w)
+# dict= {}
 
-sort_dict = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+# for w in list:
+#     dict[w]=list.count(w)
 
-i=0
-while i<5:
-    print(sort_dict[i])
-    i+=1
+# sort_dict = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+
+# i=0
+# while i<5:
+#     print(sort_dict[i])
+#     i+=1
     
-print("")
+# print("")
