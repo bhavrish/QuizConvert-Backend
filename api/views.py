@@ -15,10 +15,10 @@ class ListQuizzes(APIView):
         print(jsonRequest['link'])
 
         return Response({'Link': jsonRequest['link'], 'Quiz': 'Dummy Data'})
-#f="words.txt"
-#f=open(f, 'r')
+f="video_transcript_1.txt"
+f=open(f, 'r')
 
-f="california is a city. india is a country. i love apples. the sun is big."
+#f="california is a city. india is a country. i love apples. the sun is big."
 
 list= [] #word list
 
