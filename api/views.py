@@ -8,7 +8,7 @@ from .models import Video
 import json
 
 class ListQuizzes(APIView):
-    def get(self, request, format=None):
+    def post(self, request, format=None):
         jsonRequest = json.loads(request.body.decode('utf-8'))
 
         print(jsonRequest['link'])
